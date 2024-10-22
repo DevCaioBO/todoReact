@@ -1,0 +1,324 @@
+#bodyTasks{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #000000;
+}
+
+#InputAddTaskBody{
+    display: flex;
+    
+    padding-left: 5px;
+    outline: none;
+    background-color: transparent;
+    
+    color: #fff;
+    width: 400px;
+    
+    height: 35px;
+    border-radius: 400px 0 0 400px;
+
+
+}
+
+#InputAddTaskBody  input{
+    display: flex;
+    outline: none;
+    border: 2px solid #48cae4bb;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 15px;
+    align-items: center;
+    width: 100%;
+    border-radius: 400px 0 0 400px;
+    
+}
+
+#InputAddTaskBody  > input:focus{
+    
+    display: flex;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 15px;
+    align-items: center;
+    width: 100%;
+    border-radius: 400px 0 0 400px;
+    border: 2px  solid  #48cae4;
+    
+}
+
+
+#grouperAll{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+@keyframes ScaleSize{
+    0%{
+        transform: scale(1.00);
+        font-size: 26px;
+       
+        }
+        35%{
+            font-size: 27px;
+        }
+    100%{
+        transform: scale(1.06);
+        font-size: 29px;
+       
+    }
+
+}
+
+ #buttonAdd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 0;
+    background: linear-gradient(to top right, #14213d,#1a2b50);
+    color: #48cae4;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    
+}
+
+
+#buttonAdd:hover{
+    cursor: pointer;
+    animation: ScaleSize .6s cubic-bezier(0.19, 1, 0.22, 1) alternate infinite;
+    
+}
+
+
+#showTasks{
+    display: flex;
+    
+    
+    height: fit-content;
+    justify-content: center;
+    width: 400px;
+
+    background-color: transparent;
+    
+
+    transition: all .9s ease-in-out;
+    border-radius: 2px;
+}
+
+
+
+#showTasks li{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    width: 400px;
+    height: 52px ;
+    align-items: center;
+    padding-left: 5px;
+    color: #0dc8ee;
+    text-transform: capitalize;
+    border-radius: 5px 0 0 5px;
+    background-color: #14213d;
+}
+
+#showTasks li div{
+    display: flex;
+    
+}
+#showTasks li div button{
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    cursor: pointer;
+    margin-inline: 5px;
+    
+}
+#showTasks li div .AltButton,.DelButton,.CompleteButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  
+}
+@keyframes hourglass{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.AltButton > img,.DelButton > img ,.CompleteButton > img,.finishedButton > img{
+    width: 32px;
+    height: 32px;
+   
+}
+.CompleteButton:hover > img{
+    animation: hourglass 2.5s ease-in-out  alternate infinite;
+    width: 25px;
+    height: 25px;
+}
+.CompleteButton > img{
+    animation: hourglass 6.5s ease-in-out infinite;
+    width: 25px;
+    height: 25px;
+}
+#bodyColumnTask{
+    display: flex;
+    
+    align-items: center;
+}
+.CompleteButton{
+    display: flex;
+    height: 52px ;
+    width: 50px;
+    background-color: #14213d;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+#showTasks .completed {
+    background-color: #0dc8ee;
+    color: #000;
+    text-decoration: line-through #fff;
+
+
+
+}
+#bodyColumnTask .mudar{
+    display: flex;
+}
+#bodyColumnTask .mudou{
+    display: none;
+}
+.finishedButton{
+    display: flex;
+    height: 52px ;
+    width: 50px;
+    align-items: center;
+    background-color: #0dc8ee;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    
+    color: #000;
+}
+
+
+#InputAlt  input{
+   
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid  #205de0;;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+}
+#buttonFilterTasks{
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 15px ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#buttonFilterTasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    border-radius: 0;
+    background: linear-gradient(to top right, #14213d,#1a2b50);
+    color: #48cae4;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    
+}
+
+
+#buttonFilterTasks:hover{
+    cursor: pointer;
+    font-size: 17px;
+    
+}
+#InputAddTaskBody > #inputValues{
+    border-radius: 0 400px 400px 0 !important;
+}
+
+
+
+@media (max-width:999px){
+
+
+    #showTasks {
+        display: flex;
+        
+        
+        height: fit-content;
+        justify-content: center;
+        width: 230px;
+    
+        background-color: transparent;
+        
+    
+        transition: all .9s ease-in-out;
+        border-radius: 2px;
+    }
+
+    #InputAddTaskBody{
+        display: flex;
+        
+        padding-left: 5px;
+        outline: none;
+        background-color: transparent;
+        
+        color: #fff;
+        width: 260px;
+        
+        height: 35px;
+        border-radius: 400px 0 0 400px;
+    
+    
+    }
+
+    #showTasks li{
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        width: 200px;
+        height: 52px ;
+        align-items: center;
+        padding-left: 5px;
+        color: #0dc8ee;
+        text-transform: capitalize;
+        border-radius: 5px 0 0 5px;
+        background-color: #14213d;
+    }
+}
+
+
+
+
